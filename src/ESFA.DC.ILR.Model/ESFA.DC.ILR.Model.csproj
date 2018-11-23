@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>0.1.0</Version>
+    <PackageId>ESFA.DC.ILR.1819.Model</PackageId>
+    <Authors>DC</Authors>
+    <Company>ESFA</Company>
+    <Product>ESFA.DC.ILR.1819.Model</Product>
+    <Description>ILR 1819 Model XSD Generated Classes and Partial Class Interface Implementations.</Description>
+    <Copyright>Copyright 2018</Copyright>
+    <PackageLicenseUrl>https://github.com/SkillsFundingAgency/DC-ILR-1819-Model/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/SkillsFundingAgency/DC-ILR-1819-Model</PackageProjectUrl>
+    <PackageTags>ILR 1819 ILR1819 Model</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ESFA.DC.ILR.1819.Model.Interface" Version="0.1.3-beta0001" />
+  </ItemGroup>
+
+</Project>
