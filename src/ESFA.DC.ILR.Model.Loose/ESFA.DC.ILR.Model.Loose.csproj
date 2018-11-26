@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>ESFA.DC.ILR.Model.Loose</AssemblyName>
+    <PackageId>ESFA.DC.ILR.1819.Model.Loose</PackageId>
+    <Version>0.1.0</Version>
+    <Company>ESFA</Company>
+    <Authors>DC</Authors>
+    <Product>ESFA.DC.ILR.1819.Model.Loose</Product>
+    <Description>ILR 1819 Model Loose XSD Generated Classes and Partial Class Interface Implementations.</Description>
+    <Copyright>Copyright 2018</Copyright>
+    <PackageLicenseUrl>https://github.com/SkillsFundingAgency/DC-ILR-1819/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/SkillsFundingAgency/DC-ILR-1819</PackageProjectUrl>
+    <PackageTags>ILR 1819 ILR1819 Model Loose</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ILR-2018-19.xsd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Schema\ILR-2018-19.xsd" />
+  </ItemGroup>
+
+</Project>
