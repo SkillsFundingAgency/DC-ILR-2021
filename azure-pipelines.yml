@@ -46,7 +46,7 @@ steps:
     clean: true
 
 - task: CopyFiles@2
-  displayName: 'Copy NuGet Packages : Artifact NuGet Directory'
+  displayName: 'Copy NuGet Packages : Artifact NuGet Packages Directory'
   inputs:
     SourceFolder: '$(build.sourcesdirectory)'
     Contents: |
@@ -54,6 +54,17 @@ steps:
      !**\*Interface*.nupkg
      !**\packages\**\*.nupkg
     TargetFolder: '$(build.artifactstagingdirectory)\NuGet'
+    CleanTargetFolder: true
+    flattenFolders: true
+    
+- task: CopyFiles@2
+  displayName: 'Copy NuGet Packages : Artifact NuGet Interface Packages Directory'
+  inputs:
+    SourceFolder: '$(build.sourcesdirectory)'
+    Contents: |
+     **\*Interface*.nupkg
+     !**\packages\**\*.nupkg
+    TargetFolder: '$(build.artifactstagingdirectory)\NuGet Interface'
     CleanTargetFolder: true
     flattenFolders: true
 
