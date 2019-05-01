@@ -1,0 +1,94 @@
+name: $(GitVersion_NuGetVersion)
+
+resources:
+- repo: self
+  fetchDepth: 15
+
+pool:
+  name: DCT
+  demands:
+  - IsBuildServer
+  - msbuild
+  - visualstudio
+  - vstest
+
+#Your build pipeline references an undefined variable named ‘Parameters.solution’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build pipeline references an undefined variable named ‘Parameters.feedRestore’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build pipeline references an undefined variable named ‘Parameters.solution’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
+
+variables:
+  BuildConfiguration: 'Release'
+  BuildPlatform: 'Any CPU'
+  Parameters.solution: '**\*.sln'
+  Parameters.feedRestore: 'dct-pkg'
+
+steps:
+- task: gittools.gitversion.gitversion-task.GitVersion@4
+  displayName: GitVersion
+  inputs:
+    updateAssemblyInfo: true
+    preferBundledVersion: false
+
+- task: NuGetToolInstaller@0
+  displayName: 'Use NuGet >=4.7.0'
+  inputs:
+    versionSpec: '>=4.7.0'
+
+- task: NuGetCommand@2
+  displayName: 'NuGet restore'
+  inputs:
+    restoreSolution: '$(Parameters.solution)'
+    vstsFeed: '$(Parameters.feedRestore)'
+
+- task: VSBuild@1
+  displayName: 'Build solution **\*.sln'
+  inputs:
+    solution: '$(Parameters.solution)'
+    msbuildArgs: '/p:version=$(Build.BuildNumber) /p:FileVersion=$(Build.BuildNumber)'
+    platform: '$(BuildPlatform)'
+    configuration: '$(BuildConfiguration)'
+    clean: true
+
+- task: CopyFiles@2
+  displayName: 'Copy NuGet Packages : Artifact NuGet Directory'
+  inputs:
+    SourceFolder: '$(build.sourcesdirectory)'
+    Contents: |
+     **\*.nupkg
+     !**\*Interface*.nupkg
+     !**\packages\**\*.nupkg
+    TargetFolder: '$(build.artifactstagingdirectory)\NuGet'
+    CleanTargetFolder: true
+    flattenFolders: true
+
+- task: VSTest@2
+  displayName: 'VsTest - testAssemblies'
+  inputs:
+    testAssemblyVer2: |
+     **\$(BuildConfiguration)\*test*.dll
+     !**\obj\**
+    platform: '$(BuildPlatform)'
+    configuration: '$(BuildConfiguration)'
+
+- task: PublishSymbols@2
+  displayName: 'Publish symbols path'
+  inputs:
+    SearchPattern: '**\bin\**\*.pdb'
+    PublishSymbols: false
+  enabled: false
+  continueOnError: true
+
+- task: CopyFiles@2
+  displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
+  inputs:
+    SourceFolder: '$(system.defaultworkingdirectory)'
+    Contents: '**\bin\$(BuildConfiguration)\**'
+    TargetFolder: '$(build.artifactstagingdirectory)'
+  enabled: false
+  condition: succeededOrFailed()
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'
+  inputs:
+    PathtoPublish: '$(build.artifactstagingdirectory)'
+  condition: succeededOrFailed()
