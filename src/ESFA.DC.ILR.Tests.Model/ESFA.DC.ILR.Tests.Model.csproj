@@ -2,16 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageId>ESFA.DC.ILR.1819.Tests.Model</PackageId>
+    <PackageId>ESFA.DC.ILR.1920.Tests.Model</PackageId>
     <Version>0.1.0</Version>
     <Authors>DC</Authors>
     <Company>ESFA</Company>
-    <Product>ESFA.DC.ILR.1819.Tests.Model</Product>
-    <Description>ILR 1819 Test Model.</Description>
-    <Copyright>Copyright 2018</Copyright>
-    <PackageLicenseUrl>https://github.com/SkillsFundingAgency/DC-ILR-1819-Model/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/SkillsFundingAgency/DC-ILR-1819-Model</PackageProjectUrl>
-    <PackageTags>ILR 1819 ILR1819 Model Test</PackageTags>
+    <Product>ESFA.DC.ILR.1920.Tests.Model</Product>
+    <Description>ILR 1920 Test Model.</Description>
+    <Copyright>Copyright 2019</Copyright>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <PackageProjectUrl></PackageProjectUrl>
+    <PackageTags>ILR 1920 ILR1920 Model Test</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 

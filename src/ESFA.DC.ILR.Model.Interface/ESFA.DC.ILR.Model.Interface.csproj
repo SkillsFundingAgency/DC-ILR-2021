@@ -3,15 +3,15 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Version>0.1.0</Version>
-    <PackageId>ESFA.DC.ILR.1819.Model.Interface</PackageId>
+    <PackageId>ESFA.DC.ILR.1920.Model.Interface</PackageId>
     <Authors>DC</Authors>
     <Company>ESFA</Company>
-    <Product>ESFA.DC.ILR.1819.Model.Interface</Product>
-    <Description>ILR 1819 Model Interface.</Description>
-    <PackageLicenseUrl>https://github.com/SkillsFundingAgency/DC-ILR-1819-Model/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/SkillsFundingAgency/DC-ILR-1819-Model</PackageProjectUrl>
-    <PackageTags>ILR 1718 ILR1718 Model Interface</PackageTags>
-    <Copyright>Copyright 2018</Copyright>
+    <Product>ESFA.DC.ILR.1920.Model.Interface</Product>
+    <Description>ILR 1920 Model Interface.</Description>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <PackageProjectUrl></PackageProjectUrl>
+    <PackageTags>ILR 1920 ILR1920 Model Interface</PackageTags>
+    <Copyright>Copyright 2019</Copyright>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
