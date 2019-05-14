@@ -1,6 +1,6 @@
 ﻿namespace ESFA.DC.ILR.Constants
 {
-    public class ILRContextKeys
+    public static class ILRContextKeys
     {
         public const string AppEarnHistoryDatabaseConnectionString = "AppEarnHistoryDatabaseConnectionString";
         public const string CollectionYear = "CollectionYear";
