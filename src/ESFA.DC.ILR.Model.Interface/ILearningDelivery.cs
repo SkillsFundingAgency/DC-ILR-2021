@@ -45,6 +45,8 @@ namespace ESFA.DC.ILR.Model.Interface
 
         int? PartnerUKPRNNullable { get; }
 
+        int? PlannedHoursNullable { get; }
+
         int? PriorLearnFundAdjNullable { get; }
 
         int? ProgTypeNullable { get; }
