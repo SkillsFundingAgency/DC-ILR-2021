@@ -39,8 +39,6 @@ namespace ESFA.DC.ILR.Model.Interface
 
         string NINumber { get; }
 
-        int? OTJHoursNullable { get; }
-
         int? PlanEEPHoursNullable { get; }
 
         int? PlanLearnHoursNullable { get; }
