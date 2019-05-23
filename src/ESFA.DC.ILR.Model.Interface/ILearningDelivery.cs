@@ -35,6 +35,8 @@ namespace ESFA.DC.ILR.Model.Interface
 
         DateTime LearnStartDate { get; }
 
+        string LSDPostcode { get; }
+
         DateTime? OrigLearnStartDateNullable { get; }
 
         int? OtherFundAdjNullable { get; }
@@ -45,7 +47,7 @@ namespace ESFA.DC.ILR.Model.Interface
 
         int? PartnerUKPRNNullable { get; }
 
-        int? PHoursNullable { get; }
+        int? PlannedHoursNullable { get; }
 
         int? PriorLearnFundAdjNullable { get; }
 
