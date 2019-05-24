@@ -16,6 +16,8 @@ namespace ESFA.DC.ILR.Model.Loose
 
         public long? FworkCodeNullable => fworkCodeFieldSpecified ? fworkCodeField : default(long?);
 
+        public long? PHoursNullable => pHoursFieldSpecified ? pHoursField : default(long?);
+
         public long? PwayCodeNullable => pwayCodeFieldSpecified ? pwayCodeField : default(long?);
 
         public long? StdCodeNullable => stdCodeFieldSpecified ? stdCodeField : default(long?);

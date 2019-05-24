@@ -40,8 +40,6 @@ namespace ESFA.DC.ILR.Tests.Model
 
         public string NINumber { get; set; }
 
-        public int? OTJHoursNullable { get; set; }
-
         public int? PlanEEPHoursNullable { get; set; }
 
         public int? PlanLearnHoursNullable { get; set; }

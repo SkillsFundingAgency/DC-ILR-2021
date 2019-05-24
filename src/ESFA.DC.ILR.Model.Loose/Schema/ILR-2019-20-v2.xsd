@@ -1,6 +1,6 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns="ESFA/ILR/2018-19"
-           targetNamespace="ESFA/ILR/2018-19"
+           xmlns="ESFA/ILR/2019-20"
+           targetNamespace="ESFA/ILR/2019-20"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
            version="2.0">
@@ -28,7 +28,7 @@
                     <xs:element name="Year" >
                       <xs:simpleType>
                         <xs:restriction  base="RestrictedString">
-                          <xs:enumeration value="1819" />
+                          <xs:enumeration value="1920" />
                         </xs:restriction>
                       </xs:simpleType>
                     </xs:element>
@@ -414,14 +414,6 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="OTJHours"
-                          minOccurs="0" >
-                <xs:simpleType>
-                  <xs:restriction  base="xs:long">
-                    <xs:totalDigits value="18" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
               <xs:element name="ContactPreference"
                           minOccurs="0"
                           maxOccurs="unbounded">
@@ -671,6 +663,14 @@
                         </xs:restriction>
                       </xs:simpleType>
                     </xs:element>
+                    <xs:element name="PHours"
+                          minOccurs="0" >
+                      <xs:simpleType>
+                        <xs:restriction  base="xs:long">
+                          <xs:totalDigits value="18" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
                     <xs:element name="ProgType"
                                 minOccurs="0" >
                       <xs:simpleType>
@@ -712,6 +712,14 @@
                       </xs:simpleType>
                     </xs:element>
                     <xs:element name="DelLocPostCode"
+                                minOccurs="0" >
+                      <xs:simpleType>
+                        <xs:restriction  base="xs:string">
+                          <xs:maxLength value="1000" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="LSDPostcode"
                                 minOccurs="0" >
                       <xs:simpleType>
                         <xs:restriction  base="xs:string">

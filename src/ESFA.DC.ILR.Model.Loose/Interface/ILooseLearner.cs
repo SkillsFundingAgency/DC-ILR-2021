@@ -59,8 +59,6 @@ namespace ESFA.DC.ILR.Model.Loose.Interface
 
         long? PlanEEPHoursNullable { get; }
 
-        long? OTJHoursNullable { get; }
-
         DateTime? DateOfBirthNullable { get; }
 
         IReadOnlyCollection<ILooseContactPreference> ContactPreferences { get; }

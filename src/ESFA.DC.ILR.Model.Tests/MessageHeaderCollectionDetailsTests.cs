@@ -21,10 +21,10 @@ namespace ESFA.DC.ILR.Model.Tests
         {
             var collectionDetails = new MessageHeaderCollectionDetails()
             {
-                Year = MessageHeaderCollectionDetailsYear.Item1819
+                Year = MessageHeaderCollectionDetailsYear.Item1920
             };
 
-            collectionDetails.YearString.Should().Be("1819");
+            collectionDetails.YearString.Should().Be("1920");
         }
     }
 }
