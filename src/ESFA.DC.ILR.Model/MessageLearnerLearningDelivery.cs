@@ -35,6 +35,9 @@ namespace ESFA.DC.ILR.Model
         public int? PartnerUKPRNNullable => partnerUKPRNFieldSpecified ? (int?)partnerUKPRNField : null;
 
         [XmlIgnore]
+        public int? PHoursNullable => pHoursFieldSpecified ? (int?)pHoursField : null;
+
+        [XmlIgnore]
         public int? PriorLearnFundAdjNullable => priorLearnFundAdjFieldSpecified ? (int?)priorLearnFundAdjField : null;
 
         [XmlIgnore]

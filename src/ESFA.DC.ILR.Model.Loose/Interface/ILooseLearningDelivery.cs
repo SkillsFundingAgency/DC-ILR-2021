@@ -15,6 +15,8 @@ namespace ESFA.DC.ILR.Model.Loose.Interface
 
         string OutGrade { get; }
 
+        string LSDPostcode { get; }
+
         long? OutcomeNullable { get; }
 
         string SWSupAimId { get; }
@@ -28,6 +30,8 @@ namespace ESFA.DC.ILR.Model.Loose.Interface
         long? ProgTypeNullable { get; }
 
         long? FworkCodeNullable { get; }
+
+        long? PHoursNullable { get; }
 
         long? PwayCodeNullable { get; }
 

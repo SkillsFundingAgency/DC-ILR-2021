@@ -20,8 +20,8 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="ESFA/ILR/2018-19", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="ESFA/ILR/2019-20", IsNullable=false)]
     public partial class Message {
         
         private MessageHeader headerField;
@@ -93,7 +93,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public partial class MessageHeader {
         
         private MessageHeaderCollectionDetails collectionDetailsField;
@@ -126,7 +126,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public partial class MessageHeaderCollectionDetails {
         
         private MessageHeaderCollectionDetailsCollection collectionField;
@@ -170,7 +170,7 @@ namespace ESFA.DC.ILR.Model {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public enum MessageHeaderCollectionDetailsCollection {
         
         /// <remarks/>
@@ -180,12 +180,12 @@ namespace ESFA.DC.ILR.Model {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public enum MessageHeaderCollectionDetailsYear {
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlEnumAttribute("1819")]
-        Item1819,
+        [System.Xml.Serialization.XmlEnumAttribute("1920")]
+        Item1920,
     }
     
     /// <remarks/>
@@ -193,7 +193,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public partial class MessageHeaderSource {
         
         private MessageHeaderSourceProtectiveMarking protectiveMarkingField;
@@ -308,7 +308,7 @@ namespace ESFA.DC.ILR.Model {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public enum MessageHeaderSourceProtectiveMarking {
         
         /// <remarks/>
@@ -321,7 +321,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public partial class MessageSourceFile {
         
         private string sourceFileNameField;
@@ -428,7 +428,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public partial class MessageLearningProvider {
         
         private int uKPRNField;
@@ -449,7 +449,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public partial class MessageLearner {
         
         private string learnRefNumberField;
@@ -523,10 +523,6 @@ namespace ESFA.DC.ILR.Model {
         private string telNoField;
         
         private string emailField;
-        
-        private int oTJHoursField;
-        
-        private bool oTJHoursFieldSpecified;
         
         private MessageLearnerContactPreference[] contactPreferenceField;
         
@@ -912,27 +908,6 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public int OTJHours {
-            get {
-                return this.oTJHoursField;
-            }
-            set {
-                this.oTJHoursField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool OTJHoursSpecified {
-            get {
-                return this.oTJHoursFieldSpecified;
-            }
-            set {
-                this.oTJHoursFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("ContactPreference")]
         public MessageLearnerContactPreference[] ContactPreference {
             get {
@@ -1014,7 +989,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public partial class MessageLearnerContactPreference {
         
         private string contPrefTypeField;
@@ -1047,7 +1022,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public partial class MessageLearnerLLDDandHealthProblem {
         
         private int lLDDCatField;
@@ -1093,7 +1068,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public partial class MessageLearnerLearnerFAM {
         
         private string learnFAMTypeField;
@@ -1126,7 +1101,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public partial class MessageLearnerProviderSpecLearnerMonitoring {
         
         private string provSpecLearnMonOccurField;
@@ -1159,7 +1134,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public partial class MessageLearnerLearnerEmploymentStatus {
         
         private int empStatField;
@@ -1243,7 +1218,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public partial class MessageLearnerLearnerEmploymentStatusEmploymentStatusMonitoring {
         
         private string eSMTypeField;
@@ -1276,7 +1251,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public partial class MessageLearnerLearnerHE {
         
         private string uCASPERIDField;
@@ -1335,7 +1310,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public partial class MessageLearnerLearnerHELearnerHEFinancialSupport {
         
         private int fINTYPEField;
@@ -1368,7 +1343,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public partial class MessageLearnerLearningDelivery {
         
         private string learnAimRefField;
@@ -1386,6 +1361,10 @@ namespace ESFA.DC.ILR.Model {
         private System.DateTime learnPlanEndDateField;
         
         private int fundModelField;
+        
+        private int pHoursField;
+        
+        private bool pHoursFieldSpecified;
         
         private int progTypeField;
         
@@ -1408,6 +1387,8 @@ namespace ESFA.DC.ILR.Model {
         private bool partnerUKPRNFieldSpecified;
         
         private string delLocPostCodeField;
+        
+        private string lSDPostcodeField;
         
         private int addHoursField;
         
@@ -1546,6 +1527,27 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
+        public int PHours {
+            get {
+                return this.pHoursField;
+            }
+            set {
+                this.pHoursField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool PHoursSpecified {
+            get {
+                return this.pHoursFieldSpecified;
+            }
+            set {
+                this.pHoursFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public int ProgType {
             get {
                 return this.progTypeField;
@@ -1657,6 +1659,16 @@ namespace ESFA.DC.ILR.Model {
             }
             set {
                 this.delLocPostCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string LSDPostcode {
+            get {
+                return this.lSDPostcodeField;
+            }
+            set {
+                this.lSDPostcodeField = value;
             }
         }
         
@@ -1940,7 +1952,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public partial class MessageLearnerLearningDeliveryLearningDeliveryFAM {
         
         private string learnDelFAMTypeField;
@@ -2025,7 +2037,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public partial class MessageLearnerLearningDeliveryLearningDeliveryWorkPlacement {
         
         private System.DateTime workPlaceStartDateField;
@@ -2122,7 +2134,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public partial class MessageLearnerLearningDeliveryAppFinRecord {
         
         private string aFinTypeField;
@@ -2180,7 +2192,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public partial class MessageLearnerLearningDeliveryProviderSpecDeliveryMonitoring {
         
         private string provSpecDelMonOccurField;
@@ -2213,7 +2225,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public partial class MessageLearnerLearningDeliveryLearningDeliveryHE {
         
         private string nUMHUSField;
@@ -2628,7 +2640,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public partial class MessageLearnerDestinationandProgression {
         
         private string learnRefNumberField;
@@ -2674,7 +2686,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2019-20")]
     public partial class MessageLearnerDestinationandProgressionDPOutcome {
         
         private string outTypeField;

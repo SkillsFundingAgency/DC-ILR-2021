@@ -36,6 +36,8 @@ namespace ESFA.DC.ILR.Tests.Model
 
         public DateTime LearnStartDate { get; set; }
 
+        public string LSDPostcode { get; set; }
+
         public DateTime? OrigLearnStartDateNullable { get; set; }
 
         public int? OtherFundAdjNullable { get; set; }
@@ -45,6 +47,8 @@ namespace ESFA.DC.ILR.Tests.Model
         public string OutGrade { get; set; }
 
         public int? PartnerUKPRNNullable { get; set; }
+
+        public int? PHoursNullable { get; set; }
 
         public int? PriorLearnFundAdjNullable { get; set; }
 

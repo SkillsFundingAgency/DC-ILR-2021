@@ -17,9 +17,6 @@ namespace ESFA.DC.ILR.Model
         public DateTime? DateOfBirthNullable => dateOfBirthFieldSpecified ? (DateTime?)dateOfBirthField : null;
 
         [XmlIgnore]
-        public int? OTJHoursNullable => oTJHoursFieldSpecified ? (int?)oTJHoursField : null;
-
-        [XmlIgnore]
         public int? PlanEEPHoursNullable => planEEPHoursFieldSpecified ? (int?)planEEPHoursField : null;
 
         [XmlIgnore]

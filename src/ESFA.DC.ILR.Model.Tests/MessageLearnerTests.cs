@@ -43,18 +43,6 @@ namespace ESFA.DC.ILR.Model.Tests
         }
 
         [Fact]
-        public void OTJHoursNullable_Specified_True()
-        {
-            TestNullableSpecifiedTrue(l => l.OTJHours, Int(), l => l.OTJHoursSpecified, l => l.OTJHoursNullable);
-        }
-
-        [Fact]
-        public void OTJHoursNullable_Specified_False()
-        {
-            TestNullableSpecifiedFalse(l => l.OTJHours, Int(), l => l.OTJHoursSpecified, l => l.OTJHoursNullable);
-        }
-
-        [Fact]
         public void PMUKPRNNullable_Specified_True()
         {
             TestNullableSpecifiedTrue(l => l.PMUKPRN, Int(), l => l.PMUKPRNSpecified, l => l.PMUKPRNNullable);
