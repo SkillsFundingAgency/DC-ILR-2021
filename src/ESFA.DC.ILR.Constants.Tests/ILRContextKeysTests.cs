@@ -17,6 +17,7 @@ namespace ESFA.DC.ILR.Constants.Tests
         [InlineData(ILRContextKeys.FundingFm25Output, "FundingFm25Output")]
         [InlineData(ILRContextKeys.FundingAlbOutput, "FundingAlbOutput")]
         [InlineData(ILRContextKeys.IlrDatabaseConnectionString, "IlrDatabaseConnectionString")]
+        [InlineData(ILRContextKeys.IlrReferenceData, "IlrReferenceData")]
         [InlineData(ILRContextKeys.InvalidLearnRefNumbersCount, "InvalidLearnRefNumbersCount")]
         [InlineData(ILRContextKeys.OriginalFilename, "OriginalFilename")]
         [InlineData(ILRContextKeys.ReturnPeriod, "ReturnPeriod")]

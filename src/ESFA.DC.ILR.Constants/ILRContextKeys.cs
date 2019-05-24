@@ -14,6 +14,7 @@
         public const string FundingFm25Output = "FundingFm25Output";
         public const string FundingAlbOutput = "FundingAlbOutput";
         public const string IlrDatabaseConnectionString = "IlrDatabaseConnectionString";
+        public const string IlrReferenceData = "IlrReferenceData";
         public const string InvalidLearnRefNumbersCount = "InvalidLearnRefNumbersCount";
         public const string OriginalFilename = "OriginalFilename";
         public const string ReturnPeriod = "ReturnPeriod";
