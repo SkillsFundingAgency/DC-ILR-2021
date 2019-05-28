@@ -15,13 +15,15 @@
         public const string FundingAlbOutput = "FundingAlbOutput";
         public const string IlrDatabaseConnectionString = "IlrDatabaseConnectionString";
         public const string IlrReferenceData = "IlrReferenceData";
+        public const string InvalidLearnRefNumbers = "InvalidLearnRefNumbers";
         public const string InvalidLearnRefNumbersCount = "InvalidLearnRefNumbersCount";
         public const string OriginalFilename = "OriginalFilename";
         public const string ReturnPeriod = "ReturnPeriod";
-        public const string Ukprn = "Ukprn";
+        public const string Ukprn = "UkPrn";
         public const string ValidLearnRefNumbers = "ValidLearnRefNumbers";
         public const string ValidLearnRefNumbersCount = "ValidLearnRefNumbersCount";
         public const string ValidationErrors = "ValidationErrors";
+        public const string ValidationErrorLookups = "ValidationErrorLookups";
         public const string ValidationTotalErrorCount = "ValidationTotalErrorCount";
         public const string ValidationTotalWarningCount = "ValidationTotalWarningCount";
     }
