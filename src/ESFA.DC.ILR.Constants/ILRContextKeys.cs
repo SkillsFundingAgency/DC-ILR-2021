@@ -13,6 +13,12 @@
         public const string FundingFm35Output = "FundingFm35Output";
         public const string FundingFm25Output = "FundingFm25Output";
         public const string FundingAlbOutput = "FundingAlbOutput";
+        public const string FundingTaskALB = "ALB";
+        public const string FundingTaskFM25 = "FM25";
+        public const string FundingTaskFM35 = "FM35";
+        public const string FundingTaskFM36 = "FM36";
+        public const string FundingTaskFM70 = "FM70";
+        public const string FundingTaskFM81 = "FM81";
         public const string IlrDatabaseConnectionString = "IlrDatabaseConnectionString";
         public const string IlrReferenceData = "IlrReferenceData";
         public const string InvalidLearnRefNumbers = "InvalidLearnRefNumbers";
