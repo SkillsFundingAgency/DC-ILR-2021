@@ -25,6 +25,7 @@
         public const string InvalidLearnRefNumbersCount = "InvalidLearnRefNumbersCount";
         public const string OriginalFilename = "OriginalFilename";
         public const string ReportOutputFileNames = "ReportOutputFileNames";
+        public const string ReportTasks = "ReportTasks";
         public const string ReturnPeriod = "ReturnPeriod";
         public const string Ukprn = "UkPrn";
         public const string ValidLearnRefNumbers = "ValidLearnRefNumbers";
