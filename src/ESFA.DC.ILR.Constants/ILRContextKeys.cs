@@ -6,6 +6,7 @@
         public const string CollectionYear = "CollectionYear";
         public const string Container = "Container";
         public const string Filename = "Filename";
+        public const string ReferenceDataFilename = "ReferenceDataFilename";        
         public const string FileSizeInBytes = "FileSizeInBytes";
         public const string FundingFm81Output = "FundingFm81Output";
         public const string FundingFm70Output = "FundingFm70Output";
