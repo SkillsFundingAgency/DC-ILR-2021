@@ -35,5 +35,6 @@
         public const string ValidationErrorLookups = "ValidationErrorLookups";
         public const string ValidationTotalErrorCount = "ValidationTotalErrorCount";
         public const string ValidationTotalWarningCount = "ValidationTotalWarningCount";
+        public const string ServiceReleaseVersion = "ServiceReleaseVersion";
     }
 }
