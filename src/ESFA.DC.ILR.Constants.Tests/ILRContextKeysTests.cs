@@ -23,6 +23,7 @@ namespace ESFA.DC.ILR.Constants.Tests
         [InlineData(ILRContextKeys.InvalidLearnRefNumbersCount, "InvalidLearnRefNumbersCount")]
         [InlineData(ILRContextKeys.OriginalFilename, "OriginalFilename")]
         [InlineData(ILRContextKeys.ReturnPeriod, "ReturnPeriod")]
+        [InlineData(ILRContextKeys.ReturnPeriodName, "ReturnPeriodName")]
         [InlineData(ILRContextKeys.ReportTasks, "ReportTasks")]
         [InlineData(ILRContextKeys.ReportOutputFileNames, "ReportOutputFileNames")]
         [InlineData(ILRContextKeys.Ukprn, "UkPrn")]
