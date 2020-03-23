@@ -103,9 +103,15 @@ stages:
         TargetFolder: '$(build.artifactstagingdirectory)\NuGet Interface'
         CleanTargetFolder: true
         flattenFolders: true
-    
+
+    - task: VisualStudioTestPlatformInstaller@1
+      displayName: 'Visual Studio Test Platform Installer'
+      inputs:
+        versionSelector: latestStable
+      enabled: true
+  
     - task: VSTest@2
-      enabled: false
+      enabled: true
       displayName: 'VsTest - testAssemblies'
       inputs:
         testAssemblyVer2: |
@@ -116,6 +122,7 @@ stages:
 
     # Run all tests with "/p:CollectCoverage=true /p:CoverletOutputFormat=cobertura" to generate the code coverage file
     - task: DotNetCoreCLI@2
+      enabled: false
       displayName: Run .net Core Unit Tests
       inputs:
         command: test
