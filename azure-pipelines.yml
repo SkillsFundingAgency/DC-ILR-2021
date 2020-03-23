@@ -3,11 +3,6 @@ name: $(GitVersion_NuGetVersion)
 resources:
 - repo: self
   fetchDepth: 15
-
-pool:
-  name: DCT
-  demands:
-  - IsBuildServer
   
 variables:
   Build.Configuration: 'Release'
