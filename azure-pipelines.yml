@@ -19,7 +19,7 @@ stages:
     pool:
       name: DCT
       demands:
-      - Agent.Name -equals a-pcj-39ae860d2639
+      - Agent.Name -equals a-pcj-5e163484d3d2
       #- IsBuildServer
       
     steps:        
