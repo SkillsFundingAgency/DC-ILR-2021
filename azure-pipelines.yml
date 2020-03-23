@@ -22,7 +22,12 @@ stages:
       - Agent.Name -equals a-pcj-39ae860d2639
       #- IsBuildServer
       
-    steps:    
+    steps:        
+    - task: DotNetCoreInstaller@2
+      inputs:
+        version: 3.1.x
+      displayName: 'Use .NET Core sdk 3.1.x'
+
     - task: gittools.gitversion.gitversion-task.GitVersion@4
       displayName: GitVersion
       inputs:
