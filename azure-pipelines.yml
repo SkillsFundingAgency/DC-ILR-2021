@@ -109,14 +109,14 @@ stages:
         platform: '$(Build.Platform)'
         configuration: '$(Build.Configuration)'
 
-   # Run all tests with "/p:CollectCoverage=true /p:CoverletOutputFormat=cobertura" to generate the code coverage file
-   - task: DotNetCoreCLI@2
-     displayName: Run .net Core Unit Tests
-     inputs:
-       command: test
-       arguments: '--configuration $(BuildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura'
-       nobuild: true
-       projects: '**/*Tests.csproj'
+    # Run all tests with "/p:CollectCoverage=true /p:CoverletOutputFormat=cobertura" to generate the code coverage file
+    - task: DotNetCoreCLI@2
+      displayName: Run .net Core Unit Tests
+      inputs:
+        command: test
+        arguments: '--configuration $(BuildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura'
+        nobuild: true
+        projects: '**/*Tests.csproj'
     
     - task: PublishSymbols@2
       displayName: 'Publish symbols path'
