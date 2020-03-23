@@ -19,8 +19,9 @@ stages:
     pool:
       name: DCT
       demands:
-      - IsBuildServer
-
+      - Agent.Name -equals a-pcj-39ae860d2639
+      #- IsBuildServer
+      
     steps:    
     - task: gittools.gitversion.gitversion-task.GitVersion@4
       displayName: GitVersion
