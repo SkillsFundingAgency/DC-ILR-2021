@@ -19,8 +19,7 @@ stages:
     pool:
       name: DCT
       demands:
-      - Agent.Name -equals a-pcj-5e163484d3d2
-      #- IsBuildServer
+      - IsBuildServer
       
     steps:        
     - task: DotNetCoreInstaller@2
