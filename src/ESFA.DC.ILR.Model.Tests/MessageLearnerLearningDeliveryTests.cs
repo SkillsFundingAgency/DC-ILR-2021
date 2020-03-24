@@ -115,6 +115,18 @@ namespace ESFA.DC.ILR.Model.Tests
         }
 
         [Fact]
+        public void PHoursNullable_Specified_False()
+        {
+            TestNullableSpecifiedFalse(ld => ld.PHours, Int(), ld => ld.PHoursSpecified, ld => ld.PHoursNullable);
+        }
+
+        [Fact]
+        public void PHoursNullable_Specified_True()
+        {
+            TestNullableSpecifiedTrue(ld => ld.PHours, Int(), ld => ld.PHoursSpecified, ld => ld.PHoursNullable);
+        }
+
+        [Fact]
         public void PriorLearnFundAdjNullable_Specified_False()
         {
             TestNullableSpecifiedFalse(ld => ld.PriorLearnFundAdj, Int(), ld => ld.PriorLearnFundAdjSpecified, ld => ld.PriorLearnFundAdjNullable);

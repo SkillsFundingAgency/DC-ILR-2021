@@ -1,4 +1,5 @@
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="ESFA/ILR/2018-19" targetNamespace="ESFA/ILR/2018-19" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+<!-- edited with XMLSpy v2016 rel. 2 sp1 (x64) (http://www.altova.com) by Skills Funding Agency (Skills Funding Agency) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="ESFA/ILR/2019-20" targetNamespace="ESFA/ILR/2019-20" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
 	<xs:simpleType name="RestrictedString">
 		<xs:restriction base="xs:string">
 			<xs:pattern value="[A-Za-z0-9 ~!@#$%&amp;'\(\)\*\+,\-\./:;&lt;=&gt;\?\[\\\]_\{\}\^&#xa3;&#x20ac;]*"/>
@@ -23,7 +24,7 @@
 										<xs:element name="Year">
 											<xs:simpleType>
 												<xs:restriction base="RestrictedString">
-													<xs:enumeration value="1819"/>
+													<xs:enumeration value="1920"/>
 												</xs:restriction>
 											</xs:simpleType>
 										</xs:element>
@@ -280,7 +281,7 @@
 								<xs:simpleType>
 									<xs:restriction base="xs:int">
 										<xs:minInclusive value="0"/>
-										<xs:maxInclusive value="9999"/>
+										<xs:maxInclusive value="999999"/>
 									</xs:restriction>
 								</xs:simpleType>
 							</xs:element>
@@ -337,7 +338,7 @@
 									<xs:restriction base="RestrictedString">
 										<xs:maxLength value="50"/>
 										<xs:minLength value="1"/>
-										<xs:pattern value="[A-Za-z0-9 ~!@&amp;\\()*+,\-./:;]{1,50}"/>
+										<xs:pattern value="[A-Za-z0-9 ~!@&amp;'\\()*+,\-./:;]{1,50}"/>
 									</xs:restriction>
 								</xs:simpleType>
 							</xs:element>
@@ -346,7 +347,7 @@
 									<xs:restriction base="RestrictedString">
 										<xs:maxLength value="50"/>
 										<xs:minLength value="1"/>
-										<xs:pattern value="[A-Za-z0-9 ~!@&amp;\\()*+,\-./:;]{1,50}"/>
+										<xs:pattern value="[A-Za-z0-9 ~!@&amp;'\\()*+,\-./:;]{1,50}"/>
 									</xs:restriction>
 								</xs:simpleType>
 							</xs:element>
@@ -355,7 +356,7 @@
 									<xs:restriction base="RestrictedString">
 										<xs:maxLength value="50"/>
 										<xs:minLength value="1"/>
-										<xs:pattern value="[A-Za-z0-9 ~!@&amp;\\()*+,\-./:;]{1,50}"/>
+										<xs:pattern value="[A-Za-z0-9 ~!@&amp;'\\()*+,\-./:;]{1,50}"/>
 									</xs:restriction>
 								</xs:simpleType>
 							</xs:element>
@@ -364,7 +365,7 @@
 									<xs:restriction base="RestrictedString">
 										<xs:maxLength value="50"/>
 										<xs:minLength value="1"/>
-										<xs:pattern value="[A-Za-z0-9 ~!@&amp;\\()*+,\-./:;]{1,50}"/>
+										<xs:pattern value="[A-Za-z0-9 ~!@&amp;'\\()*+,\-./:;]{1,50}"/>
 									</xs:restriction>
 								</xs:simpleType>
 							</xs:element>
@@ -381,14 +382,6 @@
 										<xs:maxLength value="100"/>
 										<xs:minLength value="1"/>
 										<xs:pattern value=".+@.+"/>
-									</xs:restriction>
-								</xs:simpleType>
-							</xs:element>
-							<xs:element name="OTJHours" minOccurs="0">
-								<xs:simpleType>
-									<xs:restriction base="xs:int">
-										<xs:minInclusive value="0"/>
-										<xs:maxInclusive value="9999"/>
 									</xs:restriction>
 								</xs:simpleType>
 							</xs:element>
@@ -603,6 +596,14 @@
 												</xs:restriction>
 											</xs:simpleType>
 										</xs:element>
+										<xs:element name="PHours" minOccurs="0">
+											<xs:simpleType>
+												<xs:restriction base="xs:int">
+													<xs:minInclusive value="0"/>
+													<xs:maxInclusive value="9999"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
 										<xs:element name="ProgType" minOccurs="0">
 											<xs:simpleType>
 												<xs:restriction base="xs:int">
@@ -640,6 +641,14 @@
 											</xs:simpleType>
 										</xs:element>
 										<xs:element name="DelLocPostCode">
+											<xs:simpleType>
+												<xs:restriction base="RestrictedString">
+													<xs:maxLength value="8"/>
+													<xs:minLength value="1"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="LSDPostcode" minOccurs="0">
 											<xs:simpleType>
 												<xs:restriction base="RestrictedString">
 													<xs:maxLength value="8"/>

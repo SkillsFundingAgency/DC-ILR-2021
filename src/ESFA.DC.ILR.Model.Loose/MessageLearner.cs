@@ -26,8 +26,6 @@ namespace ESFA.DC.ILR.Model.Loose
 
         public long? PlanEEPHoursNullable => planEEPHoursFieldSpecified ? planEEPHoursField : default(long?);
 
-        public long? OTJHoursNullable => oTJHoursFieldSpecified ? oTJHoursField : default(long?);
-
         public DateTime? DateOfBirthNullable => dateOfBirthFieldSpecified ? dateOfBirthField : default(DateTime?);
 
         public IReadOnlyCollection<ILooseContactPreference> ContactPreferences => contactPreferenceField;

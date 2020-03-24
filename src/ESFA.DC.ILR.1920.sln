@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2036
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ESFA.DC.ILR.Model", "ESFA.DC.ILR.Model\ESFA.DC.ILR.Model.csproj", "{635D1F88-D8A2-48F1-9791-B798BE920AFA}"
 EndProject
@@ -15,9 +15,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ESFA.DC.ILR.Tests.Model", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ESFA.DC.ILR.IO.Model.Validation", "ESFA.DC.ILR.IO.Model.Validation\ESFA.DC.ILR.IO.Model.Validation.csproj", "{69917C1A-42A1-4E10-A863-DBD95A6013E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESFA.DC.ILR.Constants", "ESFA.DC.ILR.Constants\ESFA.DC.ILR.Constants.csproj", "{9BE3E7FE-A9AD-4BB2-AC7D-893F1CB99F53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ESFA.DC.ILR.Constants", "ESFA.DC.ILR.Constants\ESFA.DC.ILR.Constants.csproj", "{9BE3E7FE-A9AD-4BB2-AC7D-893F1CB99F53}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESFA.DC.ILR.Constants.Tests", "ESFA.DC.ILR.Constants.Tests\ESFA.DC.ILR.Constants.Tests.csproj", "{D6FB9B05-98C2-4B69-935C-66AF5DCFAF9B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ADD0AC3F-3B73-489F-99C2-D544BE725F0C}"
+	ProjectSection(SolutionItems) = preProject
+		..\azure-pipelines.yml = ..\azure-pipelines.yml
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
