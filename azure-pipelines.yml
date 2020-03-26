@@ -40,14 +40,14 @@ stages:
         versionSpec: '>=5.3.1'
     
     - task: NuGetCommand@2
-      enabled: false
+      enabled: true
       displayName: 'NuGet restore'
       inputs:
         restoreSolution: '$(Parameters.solution)'
         vstsFeed: '$(Parameters.feedRestore)'
 
     - task: DotNetCoreCLI@2
-      enabled: true
+      enabled: false
       displayName: 'dotnet restore'
       inputs:
         command: restore
@@ -71,8 +71,8 @@ stages:
       inputs:
         msbuildVersion: 16.0
         msbuildArchitecture: x64
-        platform: '$(BuildPlatform)'
-        configuration: '$(BuildConfiguration)'
+        platform: '$(Build.Platform)'
+        configuration: '$(Build.Configuration)'
         msbuildArguments: '-p:version=$(Build.BuildNumber) -p:FileVersion=$(Build.BuildNumber) -p:SkipInvalidConfigurations=true'
         clean: true
         maximumCpuCount: true
