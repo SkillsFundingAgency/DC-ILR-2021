@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageId>ESFA.DC.ILR.1920.IO.Model.Validation</PackageId>
+    <PackageId>ESFA.DC.ILR.2021.IO.Model.Validation</PackageId>
     <Version>0.1.0</Version>
     <Authors>DC</Authors>
     <Company>ESFA</Company>
-    <Product>ESFA.DC.ILR.1920.IO.Model.Validation</Product>
+    <Product>ESFA.DC.ILR.2021.IO.Model.Validation</Product>
     <Description>Validation Errors DTO for storage in IO Service</Description>
     <Copyright>Copyright 2019</Copyright>
     <PackageLicenseUrl></PackageLicenseUrl>
