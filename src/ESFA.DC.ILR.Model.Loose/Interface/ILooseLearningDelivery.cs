@@ -33,6 +33,8 @@ namespace ESFA.DC.ILR.Model.Loose.Interface
 
         long? PHoursNullable { get; }
 
+        long? OtjActHoursNullable { get; }
+
         long? PwayCodeNullable { get; }
 
         long? StdCodeNullable { get; }

@@ -1,5 +1,5 @@
-<!-- edited with XMLSpy v2016 rel. 2 sp1 (x64) (http://www.altova.com) by Skills Funding Agency (Skills Funding Agency) -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="ESFA/ILR/2019-20" targetNamespace="ESFA/ILR/2019-20" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+<!-- edited with XMLSpy v2017 sp2 (x64) (http://www.altova.com) by Skills Funding Agency (Skills Funding Agency) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="ESFA/ILR/2020-21" targetNamespace="ESFA/ILR/2020-21" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
 	<xs:simpleType name="RestrictedString">
 		<xs:restriction base="xs:string">
 			<xs:pattern value="[A-Za-z0-9 ~!@#$%&amp;'\(\)\*\+,\-\./:;&lt;=&gt;\?\[\\\]_\{\}\^&#xa3;&#x20ac;]*"/>
@@ -24,7 +24,7 @@
 										<xs:element name="Year">
 											<xs:simpleType>
 												<xs:restriction base="RestrictedString">
-													<xs:enumeration value="1920"/>
+													<xs:enumeration value="2021"/>
 												</xs:restriction>
 											</xs:simpleType>
 										</xs:element>
@@ -426,7 +426,7 @@
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
-							<xs:element name="LearnerFAM" minOccurs="0" maxOccurs="17">
+							<xs:element name="LearnerFAM" minOccurs="0" maxOccurs="15">
 								<xs:complexType>
 									<xs:sequence>
 										<xs:element name="LearnFAMType">
@@ -483,15 +483,6 @@
 											<xs:simpleType>
 												<xs:restriction base="xs:int">
 													<xs:totalDigits value="9"/>
-												</xs:restriction>
-											</xs:simpleType>
-										</xs:element>
-										<xs:element name="AgreeId" minOccurs="0">
-											<xs:simpleType>
-												<xs:restriction base="RestrictedString">
-													<xs:maxLength value="6"/>
-													<xs:minLength value="1"/>
-													<xs:pattern value="[A-Za-z0-9]{1,6}"/>
 												</xs:restriction>
 											</xs:simpleType>
 										</xs:element>
@@ -597,6 +588,14 @@
 											</xs:simpleType>
 										</xs:element>
 										<xs:element name="PHours" minOccurs="0">
+											<xs:simpleType>
+												<xs:restriction base="xs:int">
+													<xs:minInclusive value="0"/>
+													<xs:maxInclusive value="9999"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="OTJActHours" minOccurs="0">
 											<xs:simpleType>
 												<xs:restriction base="xs:int">
 													<xs:minInclusive value="0"/>

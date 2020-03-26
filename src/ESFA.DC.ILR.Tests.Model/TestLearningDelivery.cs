@@ -50,6 +50,8 @@ namespace ESFA.DC.ILR.Tests.Model
 
         public int? PHoursNullable { get; set; }
 
+        public int? OtjActHoursNullable { get; set; }
+
         public int? PriorLearnFundAdjNullable { get; set; }
 
         public int? ProgTypeNullable { get; set; }

@@ -5,8 +5,8 @@
     <Version>0.1.0</Version>
     <Authors>DC</Authors>
     <Company>ESFA</Company>
-    <PackageId>ESFA.DC.ILR.1920.Constants</PackageId>
-    <Product>ESFA.DC.ILR.1920.Constants</Product>
+    <PackageId>ESFA.DC.ILR.2021.Constants</PackageId>
+    <Product>ESFA.DC.ILR.2021.Constants</Product>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
