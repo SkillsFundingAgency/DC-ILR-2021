@@ -47,7 +47,7 @@ stages:
         vstsFeed: '$(Parameters.feedRestore)'
 
     - task: DotNetCoreCLI@2
-      enabled: true
+      enabled: false
       displayName: 'dotnet restore'
       inputs:
         command: restore
