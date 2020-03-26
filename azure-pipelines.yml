@@ -40,7 +40,7 @@ stages:
         versionSpec: '>=5.3.1'
     
     - task: NuGetCommand@2
-      enabled: false
+      enabled: true
       displayName: 'NuGet restore'
       inputs:
         restoreSolution: '$(Parameters.solution)'
