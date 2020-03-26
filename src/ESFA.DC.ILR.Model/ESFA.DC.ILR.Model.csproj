@@ -3,15 +3,15 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Version>0.1.0</Version>
-    <PackageId>ESFA.DC.ILR.1920.Model</PackageId>
+    <PackageId>ESFA.DC.ILR.2021.Model</PackageId>
     <Authors>DC</Authors>
     <Company>ESFA</Company>
-    <Product>ESFA.DC.ILR.1920.Model</Product>
-    <Description>ILR 1920 Model XSD Generated Classes and Partial Class Interface Implementations.</Description>
+    <Product>ESFA.DC.ILR.2021.Model</Product>
+    <Description>ILR 2021 Model XSD Generated Classes and Partial Class Interface Implementations.</Description>
     <Copyright>Copyright 2019</Copyright>
     <PackageLicenseUrl></PackageLicenseUrl>
     <PackageProjectUrl></PackageProjectUrl>
-    <PackageTags>ILR 1920 ILR1920 Model</PackageTags>
+    <PackageTags>ILR 2021 ILR2021 Model</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
