@@ -41,6 +41,8 @@ namespace ESFA.DC.ILR.Model.Interface
 
         int? OtherFundAdjNullable { get; }
 
+        int? OtjActHoursNullable { get; }
+
         int? OutcomeNullable { get; }
 
         string OutGrade { get; }
