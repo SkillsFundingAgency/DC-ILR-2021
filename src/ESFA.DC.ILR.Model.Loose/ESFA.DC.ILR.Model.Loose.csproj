@@ -18,6 +18,11 @@
 
   <ItemGroup>
     <None Remove="ILR-2018-19.xsd" />
+    <None Remove="Schema\ILR-2020-21-v1.xsd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Schema\ILR-2020-21-v1.xsd" />
   </ItemGroup>
 
 </Project>
