@@ -37,5 +37,6 @@
         public const string ValidationTotalErrorCount = "ValidationTotalErrorCount";
         public const string ValidationTotalWarningCount = "ValidationTotalWarningCount";
         public const string ServiceReleaseVersion = "ServiceReleaseVersion";
+        public const string EasReportingFilename = "EasReportingFilename";
     }
 }
