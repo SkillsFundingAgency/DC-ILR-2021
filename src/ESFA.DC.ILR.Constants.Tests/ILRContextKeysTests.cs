@@ -10,6 +10,8 @@ namespace ESFA.DC.ILR.Constants.Tests
         [InlineData(ILRContextKeys.Container, "Container")]
         [InlineData(ILRContextKeys.Filename, "Filename")]
         [InlineData(ILRContextKeys.ReferenceDataFilename, "ReferenceDataFilename")]
+        [InlineData(ILRContextKeys.EasReportingFilename, "EasReportingFilename")]
+        [InlineData(ILRContextKeys.LastEasFileUpdate, "LastEasFileUpdate")]
         [InlineData(ILRContextKeys.FileSizeInBytes, "FileSizeInBytes")]
         [InlineData(ILRContextKeys.FundingFm81Output, "FundingFm81Output")]
         [InlineData(ILRContextKeys.FundingFm70Output, "FundingFm70Output")]
