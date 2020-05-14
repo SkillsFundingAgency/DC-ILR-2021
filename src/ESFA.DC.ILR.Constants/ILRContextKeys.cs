@@ -29,6 +29,8 @@
         public const string OriginalFilename = "OriginalFilename";
         public const string ReportOutputFileNames = "ReportOutputFileNames";
         public const string ReportTasks = "ReportTasks";
+        public const string DataStoreTasks = "DataStoreTasks";
+        public const string ExportTasks = "ExportTasks";
         public const string ReturnPeriod = "ReturnPeriod";
         public const string ReturnPeriodName = "ReturnPeriodName";
         public const string Ukprn = "UkPrn";
