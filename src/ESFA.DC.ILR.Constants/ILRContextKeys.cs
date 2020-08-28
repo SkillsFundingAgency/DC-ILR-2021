@@ -23,6 +23,8 @@
         public const string FundingTaskFM81 = "FM81";
         public const string IlrDatabaseConnectionString = "IlrDatabaseConnectionString";
         public const string IlrReferenceData = "IlrReferenceData";
+        public const string LearnerReferenceData = "LearnerReferenceData";
+        public const string FrmReferenceData = "FrmReferenceData";
         public const string InvalidLearnRefNumbers = "InvalidLearnRefNumbers";
         public const string InvalidLearnRefNumbersCount = "InvalidLearnRefNumbersCount";
         public const string LastEasFileUpdate = "LastEasFileUpdate";
