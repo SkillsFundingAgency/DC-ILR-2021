@@ -127,6 +127,18 @@ namespace ESFA.DC.ILR.Model.Tests
         }
 
         [Fact]
+        public void OTJActHoursNullable_Specified_False()
+        {
+            TestNullableSpecifiedFalse(ld => ld.OTJActHours, Int(), ld => ld.OTJActHoursSpecified, ld => ld.OtjActHoursNullable);
+        }
+
+        [Fact]
+        public void OTJActHoursNullable_Specified_True()
+        {
+            TestNullableSpecifiedTrue(ld => ld.OTJActHours, Int(), ld => ld.OTJActHoursSpecified, ld => ld.OtjActHoursNullable);
+        }
+
+        [Fact]
         public void PriorLearnFundAdjNullable_Specified_False()
         {
             TestNullableSpecifiedFalse(ld => ld.PriorLearnFundAdj, Int(), ld => ld.PriorLearnFundAdjSpecified, ld => ld.PriorLearnFundAdjNullable);
