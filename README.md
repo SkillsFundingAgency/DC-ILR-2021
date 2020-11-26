@@ -1,9 +1,5 @@
 # DC-ILR-2021
-
-
-# Command used to Generate Repo Contents from another repo
-
-## CD to folder to create clone repo in
+Simple models for the ILR 2021 file specification.
 
 
 ```
