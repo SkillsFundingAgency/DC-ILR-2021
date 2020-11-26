@@ -1,4 +1,4 @@
-# DC-ILR-1920
+# DC-ILR-2021
 
 
 # Command used to Generate Repo Contents from another repo
@@ -9,10 +9,10 @@
 ```
 mkdir CloneRepo
 cd CloneRepo
-git clone --bare https://sfa-gov-uk@dev.azure.com/sfa-gov-uk/DCT/_git/DC-ILR-1819
-cd DC-ILR-1819.git
-$ git push --mirror https://sfa-gov-uk@dev.azure.com/sfa-gov-uk/DCT/_git/DC-ILR-1920-Model
+git clone --bare https://sfa-gov-uk@dev.azure.com/sfa-gov-uk/DCT/_git/DC-ILR-1920
+cd DC-ILR-1920.git
+$ git push --mirror https://sfa-gov-uk@dev.azure.com/sfa-gov-uk/DCT/_git/DC-ILR-2021-Model
 cd.. 
-rmdir /s DC-ILR-1819.git
+rmdir /s DC-ILR-1920.git
 ```
 

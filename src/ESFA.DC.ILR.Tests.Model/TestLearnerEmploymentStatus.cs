@@ -6,8 +6,6 @@ namespace ESFA.DC.ILR.Tests.Model
 {
     public class TestLearnerEmploymentStatus : ILearnerEmploymentStatus
     {
-        public string AgreeId { get; set; }
-
         public int EmpStat { get; set; }
 
         public DateTime DateEmpStatApp { get; set; }

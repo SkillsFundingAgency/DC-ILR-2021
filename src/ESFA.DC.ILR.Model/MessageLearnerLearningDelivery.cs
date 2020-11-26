@@ -38,6 +38,9 @@ namespace ESFA.DC.ILR.Model
         public int? PHoursNullable => pHoursFieldSpecified ? (int?)pHoursField : null;
 
         [XmlIgnore]
+        public int? OtjActHoursNullable => oTJActHoursFieldSpecified ? (int?)oTJActHoursField : null;
+
+        [XmlIgnore]
         public int? PriorLearnFundAdjNullable => priorLearnFundAdjFieldSpecified ? (int?)priorLearnFundAdjField : null;
 
         [XmlIgnore]

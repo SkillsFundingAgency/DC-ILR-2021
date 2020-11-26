@@ -5,8 +5,6 @@ namespace ESFA.DC.ILR.Model.Loose.Interface
 {
     public interface ILooseLearnerEmploymentStatus
     {
-        string AgreeId { get; }
-
         long? EmpStatNullable { get; }
 
         long? EmpIdNullable { get; }

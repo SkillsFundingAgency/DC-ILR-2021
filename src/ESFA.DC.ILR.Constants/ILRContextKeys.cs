@@ -5,6 +5,7 @@
         public const string AppEarnHistoryDatabaseConnectionString = "AppEarnHistoryDatabaseConnectionString";
         public const string CollectionYear = "CollectionYear";
         public const string Container = "Container";
+        public const string EasReportingFilename = "EasReportingFilename";
         public const string Filename = "Filename";
         public const string ReferenceDataFilename = "ReferenceDataFilename";        
         public const string FileSizeInBytes = "FileSizeInBytes";
@@ -22,11 +23,16 @@
         public const string FundingTaskFM81 = "FM81";
         public const string IlrDatabaseConnectionString = "IlrDatabaseConnectionString";
         public const string IlrReferenceData = "IlrReferenceData";
+        public const string LearnerReferenceData = "LearnerReferenceData";
+        public const string FrmReferenceData = "FrmReferenceData";
         public const string InvalidLearnRefNumbers = "InvalidLearnRefNumbers";
         public const string InvalidLearnRefNumbersCount = "InvalidLearnRefNumbersCount";
+        public const string LastEasFileUpdate = "LastEasFileUpdate";
         public const string OriginalFilename = "OriginalFilename";
         public const string ReportOutputFileNames = "ReportOutputFileNames";
         public const string ReportTasks = "ReportTasks";
+        public const string DataStoreTasks = "DataStoreTasks";
+        public const string ExportTasks = "ExportTasks";
         public const string ReturnPeriod = "ReturnPeriod";
         public const string ReturnPeriodName = "ReturnPeriodName";
         public const string Ukprn = "UkPrn";
